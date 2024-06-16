@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Formulario Registro Usuario</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/pagina_principal/login.html">Logearse</a>
+        </nav>
+    </header>
+
+    <h1>Formulario de Creación de Usuarios</h1>
+    <form id="registrationForm" action="/submit_adoption_form" method="post" onsubmit="return validarFormulario()">
+        <label for="rut">RUT:</label>
+        <input type="text" id="rut" name="rut" required pattern="^\d{1,8}-[\dkK]{1}$" title="Formato: 12345678-9">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required pattern="[a-zA-Z\s]+" title="Solo letras y espacios">
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <div id="errorMensajeCorreo" class="error">Por favor, ingrese un correo electrónico válido que termine en @gmail.com</div>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required>
+
+        <label for="contraseña2">Repetir Contraseña:</label>
+        <input type="password" id="contraseña2" name="contraseña2" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label for="rol">Tipo de usuario: </label>
+        <select id="rol" name="rol" required>
+            <option value="1">Administrador</option>
+            <option value="2">Usuario Normal</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <div id="pswd_info">
+        <h4>La contraseña debe cumplir los siguientes requerimientos:</h4>
+        <ul>
+            <li id="letter" class="invalid">Al menos <strong>una letra</strong></li>
+            <!-- <li id="capital" class="invalid">Al menos <strong>una letra mayúscula</strong></li>
+            <li id="number" class="invalid">Al menos <strong>un número</strong></li>
+            <li id="length" class="invalid">Al menos <strong>8 caracteres</strong></li>
+            <li id="match" class="invalid">Las contraseñas <strong>deben coincidir</strong></li> -->
+            <li id="blank" class="invalid">Las contraseñas <strong>no deben tener espacios</strong></li>
+        </ul>
+    </div>
+
+    <footer>
+        <img src="/img/Empresa.jpg" alt="Logo de la empresa" class="footer-logo">
+        <p>Catsyoi@2024</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/registrerJS.js"></script>
+ 
+</body>
+
+</html>

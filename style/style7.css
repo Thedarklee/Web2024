@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2; /* Fondo rosado suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #cc6699; /* Color del título */
+    margin-top: 20px; /* Añadido un espacio en la parte superior del título */
+}
+
+form {
+    background-color: #fff0f5; /* Fondo del formulario */
+    border: 2px solid #ffcce6; /* Borde del formulario */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #cc6699; /* Color de los textos */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px); /* Ajuste para el ancho de los campos */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffcce6; /* Borde de los campos */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #cc6699; /* Fondo del botón */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #b35980; /* Fondo del botón al pasar el mouse */
+}
+
+footer {
+    width: 100%;
+    background-color: #cc6699; /* Fondo del footer */
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    margin-top: auto;
+}
+
+.footer-logo {
+    display: block;
+    margin: 0 auto 10px;
+    width: 50px;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    background-color: #cc6699; /* Fondo del header */
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.error {
+        color: red;
+        display: none;
+    }

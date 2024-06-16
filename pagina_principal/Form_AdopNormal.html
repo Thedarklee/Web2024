@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style4.css">
+    <title>Formulario de Gatos</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/pagina_principal/IndexNormal.html">Inicio</a>
+
+        </nav>
+    </header>
+    
+    <h1>Formulario de Requisitos</h1>
+
+
+    <form action="/subir_imagenes" method="post" enctype="multipart/form-data">
+        <label for="Color">Ingresar color:</label>
+        <input type="text" id="Color" name="Color" required>
+        
+        
+        <label for="Estirilizado">Tipo de usuario: </label>
+        <select id="Estirilizado" name="Estirilizado" required>
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="Sexo">Sexo: </label>
+        <select id="Sexo" name="Sexo" required>
+            <option value="Hembra">Hembra</option>
+            <option value="Macho">Macho</option>
+        </select>
+
+        <label for="Raza">Raza del gato:</label>
+        <input type="text" id="Raza" name="Raza" required>
+
+        <label for="imagen">Subir Archivos o Documentos:</label>
+        <input type="file" id="imagen" name="imagen" required>
+        
+        <input type="submit" value="Subir Gato">
+    </form>
+    
+    <footer>
+        <img src="../pagina_principal/img/Empresa.jpg" alt="Logo de la empresa" class="footer-logo">
+        <p>Catsyoi@2024</p>
+    </footer>
+
+
+</body>
+</html>

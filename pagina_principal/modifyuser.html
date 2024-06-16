@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style7.css">
+    <title>Modificar Usuario</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/pagina_principal/Index.html">Inicio</a>
+            <a href="/pagina_principal/Users.html">Administrar Usuarios</a>
+        </nav>
+    </header>
+
+    <h1>Modificar Usuario</h1>
+    <form id="modificar-form" action="/modificar_usuario" method="POST">
+        <input type="hidden" id="usuario-rut" name="rut">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <div id="errorMensajeCorreo" class="error">Por favor, ingrese un correo electrónico válido que termine en @gmail.com</div>
+        
+        <div>
+            <label for="contraseña">Contraseña:</label>
+            <input type="text" id="contraseña" name="contraseña" required>
+        </div>
+        <div>
+            <label for="confirmar-contraseña">Confirmar Contraseña:</label>
+            <input type="text" id="confirmar-contraseña" name="confirmar_contraseña" required>
+        </div>
+        <div>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+        </div>
+        <input type="submit" value="Guardar Cambios">
+    </form>
+    <script src="/js/modifyform.js"></script>
+
+    <footer>
+        <img src="/img/Empresa.jpg" alt="Logo de la empresa" class="footer-logo">
+        <p>Catsyoi@2024</p>
+    </footer>
+
+
+</body>
+
+</html>
