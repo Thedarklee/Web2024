@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2; /* Fondo rosado suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #cc6699; /* Fondo del botón */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #b35980; /* Fondo del botón al pasar el mouse */
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    background-color: #cc6699; /* Fondo del footer */
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    margin-top: auto;
+}
+
+.footer-logo {
+    display: block;
+    margin: 0 auto 10px;
+    width: 50px;
+    height: auto;
+}
+header {
+    width: 100%;
+    background-color: #cc6699; /* Fondo del header */
+    padding: 10px 0;
+}
