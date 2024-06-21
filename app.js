@@ -10,9 +10,9 @@ const port = 3000;
 const upload = multer({ dest: 'imagenes/' });
 
 const connection = mysql.createConnection({
-    host: '127.0.0.1',
-    user: 'root',
-    password: '',
+    host: '10.0.6.39',
+    user: 'estudiante',
+    password: 'Info-2023',
     database: 'Gatos'
 });
 
